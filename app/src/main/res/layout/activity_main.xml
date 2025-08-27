@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔮 Tarot Reader"
+            android:textSize="28sp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="48dp"/>
+
+        <!-- Row 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/btnAllCards"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:text="📖\nCard Meanings"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:background="@drawable/btn_bg"
+                app:backgroundTint="@null"
+                android:textColor="@android:color/black"
+                android:elevation="0dp"
+                android:layout_margin="8dp"/>
+
+            <Button
+                android:id="@+id/btnRandomReading"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:text="🎴\nGeneral Reading\n(5 Cards)"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:background="@drawable/btn_bg"
+                app:backgroundTint="@null"
+                android:textColor="@android:color/black"
+                android:elevation="0dp"
+                android:layout_margin="8dp"/>
+        </LinearLayout>
+
+        <!-- Row 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnAskQuestion"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:text="📚\nGet Your Tarot Reading"
+                android:textSize="16sp"
+                android:gravity="center"
+                app:backgroundTint="@null"
+                android:background="@drawable/btn_bg"
+                android:textColor="@android:color/black"
+                android:elevation="0dp"
+                android:layout_margin="8dp"/>
+
+            <Button
+                android:id="@+id/btnDailyDraw"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:text="🌟\nDaily Draw"
+                android:textSize="16sp"
+                android:gravity="center"
+                app:backgroundTint="@null"
+                android:background="@drawable/btn_bg"
+                android:textColor="@android:color/black"
+                android:elevation="0dp"
+                android:layout_margin="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

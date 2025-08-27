@@ -1,0 +1,99 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFF8E1">  <!-- Optional parchment-like background -->
+
+    <LinearLayout
+        android:id="@+id/dailyRootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/dailyTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Tarot Reading"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#4E342E"/>
+
+        <!-- Row for cards -->
+        <LinearLayout
+            android:id="@+id/dailyRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Instruction -->
+        <TextView
+            android:id="@+id/dailyInstructionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap a card to reveal"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#6D4C41"
+            android:textSize="16sp"/>
+
+        <!-- Interpret button -->
+        <Button
+            android:id="@+id/dailyBtnInterpret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interpret"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"
+            android:backgroundTint="#D7CCC8"
+            android:textColor="#4E342E"/>
+
+        <!-- Summary Text -->
+        <TextView
+            android:id="@+id/dailySummaryText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text=""
+            android:visibility="gone"
+            android:textSize="16sp"
+            android:textColor="#3E2723"
+            android:lineSpacingExtra="4dp"
+            android:padding="8dp"
+            android:background="#FFF3E0"
+            android:scrollbars="vertical"/>
+
+        <!-- Loading overlay -->
+        <FrameLayout
+            android:id="@+id/dailyLoadingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="16dp">
+
+            <ProgressBar
+                android:id="@+id/dailyLoadingProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/dailyLoadingPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0%"
+                android:textColor="#4E342E"
+                android:textSize="16sp"/>
+        </FrameLayout>
+
+    </LinearLayout>
+</ScrollView>
